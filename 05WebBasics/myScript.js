@@ -16,10 +16,26 @@
 //  console.log(myElement[0]);
 
  const myPElment = document.querySelectorAll("p");
-//myPElment.textContent ="Hello i am now changed";
-// myPElment.forEach(element => {
-//     element.textContent = "I am changed by js"
-// });
+myPElment.textContent ="Hello i am now changed";
+myPElment.forEach(element => {
+    element.textContent = "I am changed by js"
+});
  
+const myNewPara = document.createElement("p");
+myNewPara.textContent = "Added by js";
+
 document.querySelector("body").appendChild(myNewPara);
+
+
+document.querySelector("button").addEventListener("click",(event) => {
+    //console.log(event);
+    event.target.textContent = "i was clicked"
+});
+
+
+//track input form
+document.querySelector("#myForm").addEventListener("input",(event) => {
+    console.log(event.target.value);
+    
+});
  
