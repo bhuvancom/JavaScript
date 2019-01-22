@@ -21,4 +21,5 @@
 //     element.textContent = "I am changed by js"
 // });
  
+document.querySelector("body").appendChild(myNewPara);
  
